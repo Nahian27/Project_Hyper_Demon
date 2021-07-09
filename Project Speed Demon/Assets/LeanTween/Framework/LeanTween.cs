@@ -1585,7 +1585,7 @@ public class LeanTween : MonoBehaviour {
     * @param {float} time:float The time to complete the rotation in
     * @return {LTDescr} LTDescr an object that distinguishes the tween
     */
-    public static LTDescr rotateZ(GameObject gameObject, float to, float time){
+    public static LTDescr rotatelocalZ(GameObject gameObject, float to, float time){
         return pushNewTween( gameObject, new Vector3(to,0,0), time, options().setRotateZ() );
     }
 

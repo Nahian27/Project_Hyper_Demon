@@ -23,7 +23,7 @@ public class HallManager : MonoBehaviour
     private void SpawnHalls(int BlockPrefabIndex)
     {
         GameObject go;
-        go=Instantiate(hallPrefabs[BlockPrefabIndex], transform.forward * zSpawn, transform.rotation);
+        go=Instantiate(hallPrefabs[BlockPrefabIndex], transform.forward * zSpawn, Quaternion.identity);
         zSpawn += BlockPrefabLenth;
         activeHalls.Add(go);
     }

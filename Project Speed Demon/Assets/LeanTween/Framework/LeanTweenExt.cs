@@ -121,8 +121,8 @@ public static class LeanTweenExt
     public static LTDescr LeanRotateY(this GameObject gameObject, float to, float time) { return LeanTween.rotateY(gameObject, to, time); }
     public static LTDescr LeanRotateY(this Transform transform, float to, float time) { return LeanTween.rotateY(transform.gameObject, to, time); }
     //LeanTween.rotateZ
-    public static LTDescr LeanRotateZ(this GameObject gameObject, float to, float time) { return LeanTween.rotateZ(gameObject, to, time); }
-    public static LTDescr LeanRotateZ(this Transform transform, float to, float time) { return LeanTween.rotateZ(transform.gameObject, to, time); }
+    public static LTDescr LeanRotateZ(this GameObject gameObject, float to, float time) { return LeanTween.rotatelocalZ(gameObject, to, time); }
+    public static LTDescr LeanRotateZ(this Transform transform, float to, float time) { return LeanTween.rotatelocalZ(transform.gameObject, to, time); }
     //LeanTween.scale
     public static LTDescr LeanScale(this GameObject gameObject, Vector3 to, float time) { return LeanTween.scale(gameObject, to, time); }
     public static LTDescr LeanScale(this Transform transform, Vector3 to, float time) { return LeanTween.scale(transform.gameObject, to, time); }

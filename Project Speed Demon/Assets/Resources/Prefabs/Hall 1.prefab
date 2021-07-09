@@ -329,7 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2693196846418978473}
   m_Layer: 0
-  m_Name: Hall
+  m_Name: Hall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -875,11 +875,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4910892858731890450, guid: 822595ffd8eb45440b0de668b4528ec2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.5
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4910892858731890450, guid: 822595ffd8eb45440b0de668b4528ec2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4910892858731890450, guid: 822595ffd8eb45440b0de668b4528ec2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -941,7 +941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4910892858731890450, guid: 822595ffd8eb45440b0de668b4528ec2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4910892858731890450, guid: 822595ffd8eb45440b0de668b4528ec2, type: 3}
       propertyPath: m_LocalPosition.z
