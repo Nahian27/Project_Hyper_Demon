@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Coin : MonoBehaviour
 {
-    private void OnTriggerEnter()
+    [EventRef] public string coinSFX;
+    private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if(other.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            RuntimeManager.PlayOneShot(coinSFX);
+        }
     }
 }

@@ -8,6 +8,9 @@ TagManager:
   - Roof
   - Left Wall
   - Right Wall
+  - Coin
+  - Hall
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post Fx
   - 
   - 
   - 

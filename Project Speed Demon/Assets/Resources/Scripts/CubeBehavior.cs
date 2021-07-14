@@ -1,8 +1,12 @@
+using FMODUnity;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CubeBehavior : MonoBehaviour
 {
-    public float horizontalSpeed, forwardSpeed, camRotationDelay;
+    public float horizontalSpeed, camRotationDelay;
+    [EventRef]
+    public string explosionSFX;
     public LeanTweenType vcamEase;
     public GameObject cmVcam;
     private bool moveLeft, moveRight, tap = false;
@@ -16,60 +20,65 @@ public class CubeBehavior : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || tap == true)
+        if (Input.GetKeyDown(KeyCode.Space)==true || tap == true)
         {
             rotatinOnOff = !rotatinOnOff;
             tap = !tap;
 
             if (rotatinOnOff == true || tap == true)
             {
-                if (Physics.gravity.y == -19.6f)
+                switch (Physics.gravity.y)
                 {
-                    Physics.gravity = new Vector3(0, 19.6f, 0);
-                    LeanTween.rotatelocalZ(cmVcam, 180, camRotationDelay).setEase(vcamEase);
+                    case -19.6f:
+                        Physics.gravity = new Vector3(0, 19.6f, 0);
+                        LeanTween.rotatelocalZ(cmVcam, 180, camRotationDelay).setEase(vcamEase);
+                        break;
+                    case 19.6f:
+                        Physics.gravity = new Vector3(0, -19.6f, 0);
+                        LeanTween.rotatelocalZ(cmVcam, 0, camRotationDelay).setEase(vcamEase);
+                        break;
                 }
-                else if (Physics.gravity.y == 19.6f)
+                switch (Physics.gravity.x)
                 {
-                    Physics.gravity = new Vector3(0, -19.6f, 0);
-                    LeanTween.rotatelocalZ(cmVcam, 0, camRotationDelay).setEase(vcamEase);
-                }
-                else if (Physics.gravity.x == -19.6f)
-                {
-                    Physics.gravity = new Vector3(19.6f, 0, 0);
-                    LeanTween.rotatelocalZ(cmVcam, -90, camRotationDelay).setEase(vcamEase);
-                }
-                else if (Physics.gravity.x == 19.6f)
-                {
-                    Physics.gravity = new Vector3(-19.6f, 0, 0);
-                    LeanTween.rotatelocalZ(cmVcam, 90, camRotationDelay).setEase(vcamEase);
+                    case -19.6f:
+                        Physics.gravity = new Vector3(19.6f, 0, 0);
+                        LeanTween.rotatelocalZ(cmVcam, -90, camRotationDelay).setEase(vcamEase);
+                        break;
+                    case 19.6f:
+                        Physics.gravity = new Vector3(-19.6f, 0, 0);
+                        LeanTween.rotatelocalZ(cmVcam, 90, camRotationDelay).setEase(vcamEase);
+                        break;
                 }
             }
             else
             {
-                if (Physics.gravity.y == 19.6f)
+                switch (Physics.gravity.y)
                 {
-                    Physics.gravity = new Vector3(0, -19.6f, 0);
-                    LeanTween.rotatelocalZ(cmVcam, 0, camRotationDelay).setEase(vcamEase);
+                    case 19.6f:
+                        Physics.gravity = new Vector3(0, -19.6f, 0);
+                        LeanTween.rotatelocalZ(cmVcam, 0, camRotationDelay).setEase(vcamEase);
+                        break;
+                    case -19.6f:
+                        Physics.gravity = new Vector3(0, 19.6f, 0);
+                        LeanTween.rotatelocalZ(cmVcam, 180, camRotationDelay).setEase(vcamEase);
+                        break;
                 }
-                else if (Physics.gravity.y == -19.6f)
+                switch (Physics.gravity.x)
                 {
-                    Physics.gravity = new Vector3(0, 19.6f, 0);
-                    LeanTween.rotatelocalZ(cmVcam, 180, camRotationDelay).setEase(vcamEase);
-                }
-                else if (Physics.gravity.x == 19.6f)
-                {
-                    Physics.gravity = new Vector3(-19.6f, 0, 0);
-                    LeanTween.rotatelocalZ(cmVcam, 90, camRotationDelay).setEase(vcamEase);
-                }
-                else if (Physics.gravity.x == -19.6f)
-                {
-                    Physics.gravity = new Vector3(19.6f, 0, 0);
-                    LeanTween.rotatelocalZ(cmVcam, -90, camRotationDelay).setEase(vcamEase);
+                    case 19.6f:
+                        Physics.gravity = new Vector3(-19.6f, 0, 0);
+                        LeanTween.rotatelocalZ(cmVcam, 90, camRotationDelay).setEase(vcamEase);
+                        break;
+                    case -19.6f:
+                        Physics.gravity = new Vector3(19.6f, 0, 0);
+                        LeanTween.rotatelocalZ(cmVcam, -90, camRotationDelay).setEase(vcamEase);
+                        break;
                 }
             }
         }
     }
-    void FixedUpdate()
+
+    private void FixedUpdate()
     {
         if (moveLeft == true || Input.GetKey(KeyCode.LeftArrow))
         {
@@ -77,7 +86,7 @@ public class CubeBehavior : MonoBehaviour
             else if (Physics.gravity.y == 19.6f) Hmove(horizontalSpeed, 0);
 
             else if (Physics.gravity.x == -19.6f) Hmove(0, horizontalSpeed);
-            else if (Physics.gravity.x == 19.6f) Hmove(0, -horizontalSpeed);
+            else Hmove(0, -horizontalSpeed);
         }
         if (moveRight == true || Input.GetKey(KeyCode.RightArrow))
         {
@@ -85,10 +94,10 @@ public class CubeBehavior : MonoBehaviour
             else if (Physics.gravity.y == 19.6f) Hmove(-horizontalSpeed, 0);
 
             else if (Physics.gravity.x == -19.6f) Hmove(0, -horizontalSpeed);
-            else if (Physics.gravity.x == 19.6f) Hmove(0, horizontalSpeed);
+            else Hmove(0, horizontalSpeed);
         }
 
-        cube.velocity = new Vector3(cube.velocity.x, cube.velocity.y, forwardSpeed);
+        cube.velocity = new Vector3(cube.velocity.x, cube.velocity.y, 0);
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -112,11 +121,15 @@ public class CubeBehavior : MonoBehaviour
             Physics.gravity = new Vector3(0, -19.6f, 0);
             LeanTween.rotatelocalZ(cmVcam, 0, camRotationDelay / 2).setEase(vcamEase);
         }
+        else if (collision.gameObject.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene(0);
+            RuntimeManager.PlayOneShot(explosionSFX);
+            Physics.gravity = new Vector3(0, -19.6f, 0);
+        }
     }
-
     void Hmove(float x, float y)
     {
-        //cube.velocity = new Vector3(x, cube.velocity.y, forwardSpeed);
         cube.AddForce(x, y, 0, ForceMode.Impulse);
     }
     public void LeftPointerDown()
