@@ -12,12 +12,7 @@ public class CubeBehavior : MonoBehaviour
     private bool moveLeft, moveRight, tap = false;
     private bool rotatinOnOff = false;
     private Rigidbody cube;
-    public bool targetFrameRate60;
 
-    private void Start()
-    {
-        if (targetFrameRate60) Application.targetFrameRate = 60;
-    }
     private void Awake()
     {
         moveLeft = moveRight = false;
@@ -128,7 +123,8 @@ public class CubeBehavior : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Finish"))
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
+            Destroy(gameObject);
             gameOverMenu.SetTrigger("Open");
             RuntimeManager.PlayOneShot(explosionSFX);
             Physics.gravity = new Vector3(0, -19.6f, 0);
