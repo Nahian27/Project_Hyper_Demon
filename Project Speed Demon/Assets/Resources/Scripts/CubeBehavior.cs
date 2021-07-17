@@ -1,6 +1,5 @@
 using FMODUnity;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CubeBehavior : MonoBehaviour
 {
@@ -9,10 +8,16 @@ public class CubeBehavior : MonoBehaviour
     public string explosionSFX;
     public LeanTweenType vcamEase;
     public GameObject cmVcam;
+    public Animator gameOverMenu;
     private bool moveLeft, moveRight, tap = false;
     private bool rotatinOnOff = false;
     private Rigidbody cube;
+    public bool targetFrameRate60;
 
+    private void Start()
+    {
+        if (targetFrameRate60) Application.targetFrameRate = 60;
+    }
     private void Awake()
     {
         moveLeft = moveRight = false;
@@ -20,7 +25,7 @@ public class CubeBehavior : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)==true || tap == true)
+        if (Input.GetKeyDown(KeyCode.Space) == true || tap == true)
         {
             rotatinOnOff = !rotatinOnOff;
             tap = !tap;
@@ -123,7 +128,8 @@ public class CubeBehavior : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Finish"))
         {
-            SceneManager.LoadScene(0);
+            Time.timeScale = 0;
+            gameOverMenu.SetTrigger("Open");
             RuntimeManager.PlayOneShot(explosionSFX);
             Physics.gravity = new Vector3(0, -19.6f, 0);
         }
