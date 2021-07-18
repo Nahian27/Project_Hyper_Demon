@@ -7,7 +7,7 @@ public class CubeBehavior : MonoBehaviour
     [EventRef]
     public string explosionSFX;
     public LeanTweenType vcamEase;
-    public GameObject cmVcam;
+    public GameObject cmVcam,explossionParticles;
     public Animator gameOverMenu;
     private bool moveLeft, moveRight, tap = false;
     private bool rotatinOnOff = false;
@@ -123,11 +123,12 @@ public class CubeBehavior : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Finish"))
         {
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
             Destroy(gameObject);
             gameOverMenu.SetTrigger("Open");
             RuntimeManager.PlayOneShot(explosionSFX);
             Physics.gravity = new Vector3(0, -19.6f, 0);
+            Instantiate(explossionParticles,transform.position,transform.rotation);
         }
     }
     void Hmove(float x, float y)

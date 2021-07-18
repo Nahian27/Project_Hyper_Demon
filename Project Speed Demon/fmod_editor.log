@@ -7,12 +7,185 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000222DB08B158 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000027462005038 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C0A973F228
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC851D7D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC851D7D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC851D7E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC851D7F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002731D649428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Sci-Fi Explosion Sound Effect (321 kbps) - Trimmed', format=5, channels=2, frequency=44100, lengthbytes=23168, lengthpcm=186010, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.800873.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C0A973F228
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC851D7D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC851D7D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC851D7E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC851D7F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002731D649428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Sci-Fi Explosion Sound Effect (322 kbps) - Trimmed', format=5, channels=2, frequency=44100, lengthbytes=23232, lengthpcm=296133, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C0A973F228
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC851D7D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC851D7D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC851D7E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC851D7F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002731D649428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Sci-Fi Explosion Sound Effect (320 kbps) - Trimmed', format=5, channels=2, frequency=44100, lengthbytes=22624, lengthpcm=232851, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.896698.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C0A973F228
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC851D7D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC851D7D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC851D7E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC851D7F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002731D649428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Sci-Fi Explosion Sound Effect (323 kbps) - Trimmed', format=5, channels=2, frequency=44100, lengthbytes=24608, lengthpcm=232190, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.939514.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C0A973F228
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC851D7D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC851D7D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC851D7E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC851D7F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002731D649428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='GUI_Select_22 1', format=5, channels=2, frequency=44100, lengthbytes=1600, lengthpcm=22050, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.944061.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C0A973F228
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC851D7D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC851D7D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC851D7E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC851D7F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002731D649428
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Sci-Fi Explosion Sound Effect (324 kbps) - Trimmed', format=5, channels=2, frequency=44100, lengthbytes=25632, lengthpcm=297675, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.974274.
+[LOG] SystemI::createSound                     : filename = ../../../FMOD Studio/Speed Demon/Build/Mobile/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000273E83B80B8 : node = 000002731D925240
+[LOG] SystemI::createSound                     : add node to async list : head = 00000273EAA9F2B8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000273E83B80B8
+[LOG] SystemI::createSoundInternal             :     Create name='../../../FMOD Studio/Speed Demon/Build/Mobile/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002731D925350
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Night dweller', format=5, channels=2, frequency=44100, lengthbytes=1203520, lengthpcm=9436481, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000273E83B80B8
+[LOG] SoundI::release                          : Escape from LV426 (00000273E83B8418)
+[LOG] SoundI::release                          :     Escape from LV426 (00000273233673E8)
+[LOG] SoundI::release                          :     Escape from LV426 (00000273E83B9F18)
+[LOG] SoundI::release                          : Night dweller (00000273E83B80B8)
+[LOG] SoundI::release                          :     Night dweller (00000274697752D8)
+[LOG] SoundI::release                          :     Night dweller (000002745FDE0228)
+[LOG] SystemI::createSound                     : filename = ../../../FMOD Studio/Speed Demon/Build/Mobile/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000272D0700D08 : node = 00000273EAB992E0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000273EAA9F2B8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000272D0700D08
+[LOG] SystemI::createSoundInternal             :     Create name='../../../FMOD Studio/Speed Demon/Build/Mobile/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 17447424
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000273EAB993F0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Arcadia', format=5, channels=2, frequency=44100, lengthbytes=1233472, lengthpcm=9260381, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000272D0700D08
+[LOG] SoundI::release                          : Arcadia (00000272D0700D08)
+[LOG] SoundI::release                          :     Arcadia (0000027323366A28)
+[LOG] SoundI::release                          :     Arcadia (00000273E83BCCA8)
+[LOG] SoundI::release                          :  (00000272D07054B8)
+[LOG] SoundI::release                          :     GUI_Select_22 1 (00000273AEB34238)
+[LOG] SoundI::release                          :  (00000272D0705D58)
+[LOG] SoundI::release                          :     Sci-Fi Explosion Sound Effect (320 kbps) - Trimmed (0000027324DE78F8)
+[LOG] SoundI::release                          :  (00000272D0705798)
+[LOG] SoundI::release                          :     Sci-Fi Explosion Sound Effect (321 kbps) - Trimmed (0000027324DE7C38)
+[LOG] SoundI::release                          :  (00000272D0705A78)
+[LOG] SoundI::release                          :     Sci-Fi Explosion Sound Effect (322 kbps) - Trimmed (0000027324DE7758)
+[LOG] SoundI::release                          :  (00000272D07051D8)
+[LOG] SoundI::release                          :     Sci-Fi Explosion Sound Effect (323 kbps) - Trimmed (00000273AEB34098)
+[LOG] SoundI::release                          :  (00000272D0705908)
+[LOG] SoundI::release                          :     Sci-Fi Explosion Sound Effect (324 kbps) - Trimmed (00000273AEB33D58)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
